@@ -1,0 +1,20 @@
+/**
+ * CT Responsive Framework
+ */
+@charset "UTF-8";
+@import "modular-scale";
+@import "compass";
+
+// LTR Support.
+$text-direction: rtl; // ltr || rtl
+$font-family: sans-serif;
+
+@import "settings";
+@import "../../../../../ctwdk/sass/var/lists";
+@import "../../../../../ctwdk/sass/var/icons/list";
+
+@import "../../../../../ctwdk/sass/functions/all";
+@import "../../../../../ctwdk/sass/mixins/all";
+@import "../../../../../ctwdk/sass/ui/all";
+
+@import "custom";

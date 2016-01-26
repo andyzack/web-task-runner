@@ -1,0 +1,11 @@
+/**
+ * CT Responsive Framework
+ */
+@charset "UTF-8";
+@import "compass";
+
+// LTR Support.
+$text-direction: ltr; // ltr || rtl
+
+@import "settings-wg";
+@import "custom-wg";

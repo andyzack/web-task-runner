@@ -1,0 +1,44 @@
+/*********************************
+ * MICROSITES WIDGETS
+ *********************************/
+// SUPPLIER LOGOS
+$ms-vendors-image: "/assets/img/ct-vendors.jpg";
+//@import "compass/utilities/sprites";
+//@import "vendors/*.png";
+//@include all-vendors-sprites;
+
+// REVIEWS
+$ms-reviews-heading: $black-color;
+$ms-reviews-bodytext: $secondary-color;
+$ms-reviews-hline: lighten($black-color, 100%);
+$ms-reviews-star: $complimentary-color;
+$ms-reviews-pagination-default: lighten($black-color, 15%);
+$ms-reviews-pagination-active: lighten($black-color, 5%);
+$ms-reviews-pagination-active: lighten($black-color, 5%);
+$ms-reviews-pagination-size: 30;
+$ms-reviews-pagination-ring: false;
+$ms-reviews-pagination-ring-color: $ms-reviews-pagination-active;
+$ms-reviews-pagination-ring-inner: $ms-reviews-pagination-default;
+
+// CAMPAIGN OFFERS
+$ms-campaign-textalign: center;
+$ms-campaign-heading: $black-color;
+$ms-campaign-locationname: $black-color;
+$ms-campaign-pricetext: $primary-color;
+$ms-campaign-link-default: $secondary-color;
+$ms-campaign-link-hover: $primary-color;
+$ms-campaign-carpic-background: $white-color;
+$ms-campaign-carpic-ovalshape: false;
+$ms-campaign-carpic-borderradius: 6;
+$ms-campaign-disclaimer: lighten($black-color, 40%);
+
+// USPS
+$ms-usp1-background: $primary-color;
+$ms-usp2-background: $primary-color;
+$ms-usp3-background: $primary-color;
+$ms-usp1-text: $primary-color;
+$ms-usp2-text: $primary-color;
+$ms-usp3-text: $primary-color;
+$ms-usps-icon-inner: $white-color;
+
+@import "../../../../../ctwdk/sass/ui/ms/all";

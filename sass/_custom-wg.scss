@@ -1,0 +1,422 @@
+/* /\/\/\/\/\/\/\/\/ TEMPLATE STYLES /\/\/\/\/\/\/\/\/ */
+$ctw-width: 912px;
+$ctw-height: auto;
+$ctw-primary-color: #00549f;
+$ctw-secondary-color: #f6e408;
+$ctw-black-color: #000000;
+$ctw-outer-border-color: #CCCCCC;
+$ctw-outer-background-color: #FFFFFF;
+$ctw-inner-border-color: #b8b9b4;
+$ctw-inner-background-color: #FFFFFF;
+$ctw-font-family: arial, Helvetica;
+$ctw-font-color: $ctw-primary-color;
+$ctw-font-size: 12px;
+$ctw-heading-family: $ctw-font-family;
+$ctw-heading-color: $ctw-primary-color;
+
+/* ========== Page Styles ========== */
+@import "compass";
+.ctw-wrapper {
+
+      .ctw-bodytable {
+        background-color:transparent;
+      }
+      .ctw-bodycell {
+        padding:0;
+        border-top:0;
+      }
+      .ctw-maincontainer {
+        border:0;
+        width:$ctw-width;
+        height:$ctw-height;
+        background-color: $ctw-outer-background-color;
+
+        h1, h2, h3, h4 {
+          font-family:$ctw-font-family;
+          line-height:100%;
+          letter-spacing:normal;
+          margin-top:0;
+          margin-right:0;
+          margin-bottom:10px;
+          margin-left:0;
+          text-align:left;
+          display:block;
+        }
+        h1{
+          color:$ctw-heading-color !important;
+          font-size:26px;
+          font-style:normal;
+          font-weight:bold;
+        }
+
+        h2{
+          color:$ctw-heading-color !important;
+          font-size:20px;
+          font-style:normal;
+          font-weight:bold;
+        }
+
+        h3{
+          color:$ctw-heading-color !important;
+          font-size:16px;
+          font-style:italic;
+          font-weight:normal;
+        }
+
+        h4{
+          color:$ctw-heading-color !important;
+          font-size:12px;
+          font-style:italic;
+          font-weight:normal;
+          line-height:100%;
+        }
+      }
+
+      /* ========== nodata Styles ========== */
+      .ctw-nodata{
+        background-color:#F4F4F4; 
+        background-image: url("../img/ctw-nodata.png"); /*https://www.aerlinguscars.com/resource/aerlingus/assets/img/ctw-nodata.jpg*/
+        background-position: top center;
+        background-repeat: no-repeat;
+        width:$ctw-width;
+        height:400px;
+        img {
+          height:auto;
+          max-width:892px;
+        }
+      }
+
+      .ctw-nodatacontainer {
+        padding: 30px 60px;
+        text-align: center;
+        vertical-align: top;
+        h2 {
+          color: $ctw-primary-color !important;
+          font-size: 32px; font-weight: bold; text-align:left;
+        }
+        h3 {
+          color: $ctw-primary-color !important;
+          font-size: 18px; font-weight: bold; font-style: normal; text-align:left;
+          padding: 0 0 90px;
+        }
+      }
+      .ctw-nodatalink {
+        @include border-radius(5px); background-color:$ctw-primary-color;
+      }
+      .ctw-nodatalinkcontent {
+          color:#FFFFFF;
+          font-family: $ctw-font-family;
+          line-height:1;
+          padding-top:8px;
+          padding-right:16px;
+          padding-bottom:8px;
+          padding-left:16px;
+          text-align:center;
+          border: none;
+          a:link, a:visited, /* Yahoo! Mail Override */ a .yshortcuts, a span /* Yahoo! Mail Override */{
+            color:#FFFFFF;
+            font-family:$ctw-font-family;
+            font-size:13px;
+            font-weight:bold;
+            text-decoration:none;
+        }
+        em {font-style: normal;}
+      }
+
+      /* ========== Body Styles ========== */
+      .ctw-mainheader{
+        background-color:#FFFFFF;
+        border-top:0 solid #FFFFFF;
+        border-bottom:0 solid #CCCCCC;
+      }
+
+      .ctw-headercontent{
+        color:#333333;
+        font-family:$ctw-font-family;
+        font-size:16px;
+        line-height:150%;
+        padding-top:0;
+        padding-right:0;
+        padding-bottom:3px;
+        padding-left:0;
+        text-align:left;
+
+        h2 {
+          color: $ctw-font-color; margin: 0; padding: 6px 0; font-size: 21px; font-weight: bold;
+        }
+
+        a:link, a:visited, /* Yahoo! Mail Override */ a .yshortcuts /* Yahoo! Mail Override */{
+          color:#EB4102;
+          font-weight:normal;
+          text-decoration:underline;
+        }
+
+        img{
+          display:inline;
+          height:auto;
+          max-width:560px;
+        }
+      }
+
+      /* ========== Footer Styles ========== */
+      .ctw-mainfooter{
+        background-color:#FFFFFF;
+      }
+      .ctw-suppliers {
+        padding: 12px 0 0;
+      }
+      .ctw-moreoptionscontainer {
+        padding: 12px 12px 0;
+        width: 25%;
+      }
+      .ctw-moreoptions {
+        @include border-radius(5px); background-color:$ctw-primary-color;
+      }
+      .ctw-moreoptionscontent {
+          color:#FFFFFF;
+          font-family: $ctw-font-family;
+          font-size:14px;
+          line-height:100%;
+          padding-top:12px;
+          padding-right:8px;
+          padding-bottom:12px;
+          padding-left:8px;
+          text-align:center;
+          a:link, a:visited, /* Yahoo! Mail Override */ a .yshortcuts, a span /* Yahoo! Mail Override */{
+            color:#FFFFFF;
+            font-family:$ctw-font-family;
+            font-size:14px;
+            font-weight:bold;
+            text-decoration:none;
+        }
+        em {font-style: normal;}
+      }
+
+      /* ========== Column Styles ========== */
+      .ctw-box{width:20%; padding: 3px;}
+
+      .ctw-maincolumns{
+        background-color:#FFFFFF;
+        border-top:0 solid #FFFFFF;
+        border-bottom:0 solid #CCCCCC;
+      }
+
+      .ctw-innertube{
+        color:#505050;
+        font-family:$ctw-font-family;
+        font-size:14px;
+        line-height:150%;
+        padding-top:0;
+        padding-right:0;
+        padding-bottom:0;
+        padding-left:0;
+        text-align:left;
+        @include box-shadow(#d8d8d8 2px 2px 1px);
+        a:link, a:visited, /* Yahoo! Mail Override */ a .yshortcuts /* Yahoo! Mail Override */{
+          color:#EB4102;
+          font-weight:normal;
+          text-decoration:underline;
+        }
+      }
+
+      .ctw-innertube{
+        border: 1px solid $ctw-inner-border-color;
+        background-color:$ctw-inner-background-color;
+      }
+
+      .ctw-cargroup {
+        font-family: $ctw-font-family;
+        text-align: center;
+        color: #333333;
+        height: 26px;
+        vertical-align: middle;
+      }
+      .ctw-cargroupname {
+        font-size: 16px;
+        font-weight: normal;
+        padding: 12px 12px 10px;
+        text-align: left;
+        vertical-align: top;
+        border: none;
+      }
+      .ctw-cargrouptype {
+        font-size: 12px;
+        font-weight: normal;
+        padding: 0 12px 6px;
+        vertical-align: bottom;
+        text-align: left;
+        position: relative;
+        h4 {
+          padding: 8px 10px 8px 8px;
+          font-size: 12px;
+          font-style: normal;
+          height: 14px;
+          color: black !important;
+        }
+
+      }
+
+      .ctw-carimagecontainer {
+        padding: 0 10px;
+      }
+      .ctw-carimagecontent {
+        background-color: #FFFFFF;
+        padding: 10px;
+      }
+      
+      .ctw-carimage {
+        padding: 0;
+        text-align: center;
+        img {
+          width: 152px;
+        }
+      }
+
+      .ctw-carpricecontainer {
+        padding: 12px 3px;
+      }
+
+      .ctw-cartotalprice {
+        font-family: $ctw-font-family;
+        text-align: center;
+        color: $ctw-primary-color;
+        line-height: 0.6;
+        margin: 0 auto;
+      }
+      .ctw-cartotalpriceccy {
+        font-size: 20px;
+        vertical-align: top;
+        font-weight: bold;
+      }
+      .ctw-cartotalpriceamt {
+        font-size: 40px;
+        font-weight: bold;
+      }
+      .ctw-cartotalpriceday {
+        font-size: 18px;
+        vertical-align: bottom;
+        font-weight: normal;
+        text-transform: lowercase;
+      }
+
+      .ctw-cardailyprice {
+        font-family: $ctw-font-family;
+        text-align: center;
+        color: $ctw-primary-color;
+        margin: 0 auto;
+      }
+      .ctw-cardailypriceccy {
+        font-size: 30px;
+        font-weight: bold;
+      }
+      .ctw-cardailypriceamt {
+        font-size: 30px;
+        font-weight: bold;
+      }
+      .ctw-cardailypriceday {
+        font-size: 16px;
+        vertical-align: bottom;
+        font-weight: bold;
+        text-transform: lowercase;
+        padding: 6px 0 0;
+      }
+
+      .ctw-bookcontainer {
+        padding: 6px 12px 14px;
+      }
+      .ctw-book {
+        @include border-radius(5px); background-color:$ctw-secondary-color;
+      }
+      .ctw-bookcontent {
+          color:$ctw-primary-color;
+          font-family: $ctw-font-family;
+          font-size:18px;
+          line-height:100%;
+          padding-top:12px;
+          padding-right:2px;
+          padding-bottom:12px;
+          padding-left:2px;
+          text-align:center;
+          a:link, a:visited, /* Yahoo! Mail Override */ a .yshortcuts, a span /* Yahoo! Mail Override */{
+            color:$ctw-primary-color;
+            font-family:$ctw-font-family;
+            font-size:18px;
+            font-weight:bold;
+            text-decoration:none;
+        }
+        em {font-style: normal;}
+      }
+
+      @media only screen and (max-width: 430px){
+        /* /\/\/\/\/\/\/ CLIENT-SPECIFIC MOBILE STYLES /\/\/\/\/\/\/ */
+        body table.ctw-bodytable {
+          table, td, p, a, li, blockquote{-webkit-text-size-adjust:none !important;} /* Prevent Webkit platforms from changing default text sizes */
+        }
+        body table.ctw-bodytable{width:100% !important; min-width:100% !important;} /* Prevent iOS Mail from adding padding to the body */
+
+        /* /\/\/\/\/\/\/ MOBILE RESET STYLES /\/\/\/\/\/\/ */
+        .ctw-bodycell{padding:10px !important;}
+
+        /* /\/\/\/\/\/\/ MOBILE TEMPLATE STYLES /\/\/\/\/\/\/ */
+
+        /* ======== Page Styles ======== */
+        .ctw-maincontainer{
+          max-width:892px !important;
+          width:100% !important;
+          h1{
+            font-size:24px !important;
+            line-height:100% !important;
+          }
+          h2{
+            font-size:20px !important;
+            line-height:100% !important;
+          }
+          h3{
+            font-size:18px !important;
+            line-height:100% !important;
+          }
+          h4{
+            font-size:16px !important;
+            line-height:100% !important;
+          }
+        }
+
+        /* ======== Header Styles ======== */
+
+        .ctw-suppliers{display:none !important;} /* Hide the template preheader to save space */
+        .ctw-headerimage{
+          height:auto !important;
+          max-width:892px !important;
+          width:100% !important;
+        }
+        .ctw-nodatacontent{
+          font-size:20px !important;
+          line-height:125% !important;
+        }
+
+        /* ======== Body Styles ======== */
+        .ctw-headercontent{
+          font-size:16px !important;
+          line-height:125% !important;
+        }
+
+        /* ======== Column Styles ======== */
+        .ctw-box{display:block !important; width:100% !important;}
+        .ctw-columnimage{
+          height:auto !important;
+          max-width:480px !important;
+          width:100% !important;
+        }
+        .ctw-innertube{
+          font-size:16px !important;
+          line-height:125% !important;
+        }
+
+        /* ======== Footer Styles ======== */
+        .ctw-footerContent{
+          font-size:14px !important;
+          line-height:115% !important;
+        }
+        a{display:block !important;} /* Place footer social and utility links on their own lines, for easier access */
+      }
+}

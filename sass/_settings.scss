@@ -1,0 +1,194 @@
+/*
+ * Global Settings File.
+ */
+
+// Responsive
+$responsive: true;												            // do we want the responsive styles?
+
+// Body
+$body: html;															           // apply top level styling......typography, CSS reset etc....
+
+
+// Grid Settings
+$row-max-width: 1180px !default;                      // 960px
+$gutter-in-px: 10px !default;                        // 20px
+$gridUnits: 12 !default;                             // Default Grid - 10 Grid Units
+$hybridGridUnits: 14 !default;                       // PLEASE DO NOT CHANGE ---- Default Hybrid Grid - 12 Grid Units - Reserved for AJAX Booking Engine.
+$maxShiftUnits: 2;                                  // Optimisation - Value of -1 will ensure that for each grid unit we set a shiftl|shiftr setting. Set a limit on this value to reduce the CSS .
+$maxShiftHybridUnits: 2;              		          // Optimisation - Value of -1 will ensure that for each HybridGrid Unit we set a shiftl|shiftr setting. Set a limit on this value to reduce the CSS .
+
+// Responsiveness Settings
+$min-device-width: 320px;                              // iPhone Portrait
+$phone-device-width: 500px;                            // iPhone Landscape
+$tablet-device-width: 768px;                           // iPad Portrait
+$desktop-device-width: 1024px;                         // iPad Landscape
+$document-width: $row-max-width;                       // Default Document
+$max-device-width: 2880px;                             // Max Document Size
+
+$navbar-breakpoint: $tablet-device-width;              // Point at which responsive navbar is triggered.
+
+// Spacing
+$nav-distance: 0;                                       // Navigation distance from the top of the viewport
+
+// IE9 > Gradient Support
+$experimental-support-for-svg: true;
+
+// Fonts
+//@import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+
+// Typography
+$font-family: Arial, Verdana, Helvetica, sans-serif;
+$font-style-italic: italic;
+$icons: "Cartrawler-Icons";
+$font-smoothing: antialiased;
+
+// Set local icon font
+@font-face {
+  font-family: '#{$icons}';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/assets/fonts/#{$icons}.eot);
+  src: url('/assets/fonts/#{$icons}.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/#{$icons}.woff') format('woff'),
+       url('/assets/fonts/#{$icons}.ttf')  format('truetype');
+}
+
+// Font Weights
+$font-weight-bold: 700;
+$font-weight-semibold: 600;
+$font-weight-medium: 400;
+$font-weight-regular: 400;
+$font-weight-light: 300;
+$font-weight-thin: 300;
+
+// Heading Tags
+$header-font-family: Arial, Verdana, Helvetica, sans-serif;
+$header-font-weight: $font-weight-thin;
+$body-font-weight: $font-weight-regular;
+$button-font-weight: $font-weight-semibold;
+$tabs-font-weight: $font-weight-semibold;
+
+// Vertical Rhythm Spacing
+$base-line-height: ms(1) !default;
+$rhythm-spacing: .138;
+$rhythm-height: .651;
+
+// Modular Scale Settings
+// http://www.modularscale.com by Tim Brown
+// https://github.com/scottkellum/modular-scale
+$ratio: minor-third();						// Ratio for Modular Scale
+$base-font-size: 13px;
+$importantNum: 78px !default;
+$base-size: $base-font-size $importantNum;
+// Default Scale Values: 16, 18, 26, 30, 42, 48, 68, 78, 110, 126;
+
+// Sizing
+$xxsmall: ms(-3);
+$xsmall: ms(-2);
+$small: ms(-1);
+$norm: ms(0);									// $base-font-size (13px == default)
+$med: ms(2);
+$large: ms(4);
+$xlarge: ms(6);
+$xxlarge: ms(10);
+$xxxlarge: ms(14);
+$obese: ms(18);
+$xobese: ms(22);
+$xxobese: ms(26);
+$xxxobese: ms(30);
+
+// UI - graphical style
+$graphical-style: flat;	// modern | flat
+
+// UI - Borders
+$border-radius: 4px !default;
+$zero-radius: 0px !important;
+
+// Permanent Interface Colors
+$white-color: #FFFFFF;
+$black-color: #3B3A38;
+$grey-color: #F1F1F1;
+$green-color: #A2c375;
+$error-color: #CA2F2B;
+$focus-color: #67BAf4;
+
+// Channel related interface Colors
+$primary-color: #01b3e0; // travelstart logo blue
+$secondary-color: #6bba65; // travelstart green button
+$complimentary-color: #ffd600; // Golden yellow (price txt)
+
+// Typography Colors
+$header-font-color: $black-color !default;
+$body-font-color: $black-color !default;
+$body-link-color: $primary-color !default;
+$body-link-hover-color: $secondary-color !default;
+
+// Light & Dark shades.
+$lighten-color: 20%;
+$light-color: 32%;
+$darken-color: 10%;
+$dark-color: 20%;
+
+// User Interface Colors
+$global-bg-color: #E3DBD4;
+$navbar-color: $secondary-color;//#4a4d50;
+$navbar-link-color: $white-color; //#fff;
+$navbar-link-color-hover: $white-color; //#fff;
+
+// Used on NavBar & Typography.
+$horizontal-rule-color: #ccc !default;
+
+// Borders
+$border-radius: 4px !default;
+$zero-radius: 0px !important;
+
+// Buttons Font Sizing
+$xxlarge-button-font-size: $xxlarge;
+$xlarge-button-font-size: $xlarge;
+$large-button-font-size: $large;
+$medium-button-font-size: $norm;
+$small-button-font-size: $small;
+// Padding
+$default-button-padding: $med;
+
+// Tabs
+$tab-height: 42px;
+
+// Progress Bar
+$progress-bar-height: 42px;
+
+// Lightbox
+$lightbox-bg-color: $primary-color;
+
+// Navigation
+$navcontain-height: 100px; // makes space at the top of a document for when using a fixed nav
+
+// Tables
+$table-bgcolor: #fff;
+$table-thead-bgcolor: $primary-color;
+$table-row-first-cell-font-weight: bold;
+$table-border-size: 1px;
+$table-border-style: solid;
+$table-border-color: #e5e5e5;
+$table-cell-border-size: 1px;
+$table-cell-border-color: #e5e5e5;
+$table-cell-border-style: solid;
+// .rounded
+$table-border-radius: 4px;
+// .striped
+$table-stripe-bgcolor: #e5e5e5;
+
+// Tooltips
+$tooltip-min-width: 130px;
+$tooltip-bgcolor: $primary-color;
+$tooltip-position: top;                    // position: top / bottom / left / right
+$tooltip-align: left;                    // text and caret alignment: left / right
+$tooltip-modern: yes;                    // yes = modern / no = flat
+
+// Floats
+$default-dir: left;
+$reverse-dir: right;
+@if $text-direction == 'rtl' {
+	$default-dir: right;
+	$reverse-dir: left;
+}
